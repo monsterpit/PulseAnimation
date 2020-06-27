@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B007F27524A795F600D6C989 /* PulsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007F27424A795F600D6C989 /* PulsingView.swift */; };
+		B007F27724A7C3ED00D6C989 /* CircularProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007F27624A7C3ED00D6C989 /* CircularProgressLayer.swift */; };
 		B00A0A71247D16EF00388342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A0A70247D16EF00388342 /* AppDelegate.swift */; };
 		B00A0A73247D16EF00388342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A0A72247D16EF00388342 /* SceneDelegate.swift */; };
 		B00A0A75247D16EF00388342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A0A74247D16EF00388342 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B007F27424A795F600D6C989 /* PulsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingView.swift; sourceTree = "<group>"; };
+		B007F27624A7C3ED00D6C989 /* CircularProgressLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressLayer.swift; sourceTree = "<group>"; };
 		B00A0A6D247D16EF00388342 /* PulseAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00A0A70247D16EF00388342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00A0A72247D16EF00388342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B007F27924A7C47700D6C989 /* RippleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B0392E4324A7785A00A8776C /* RippleAnimationLayer.swift */,
+				B007F27624A7C3ED00D6C989 /* CircularProgressLayer.swift */,
+				B007F27424A795F600D6C989 /* PulsingView.swift */,
+			);
+			path = RippleAnimation;
+			sourceTree = "<group>";
+		};
 		B00A0A64247D16EE00388342 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +118,11 @@
 				B00A0A70247D16EF00388342 /* AppDelegate.swift */,
 				B00A0A72247D16EF00388342 /* SceneDelegate.swift */,
 				B00A0A74247D16EF00388342 /* ViewController.swift */,
-				B0392E4324A7785A00A8776C /* RippleAnimationLayer.swift */,
 				B00A0A76247D16EF00388342 /* Main.storyboard */,
 				B00A0A79247D16F000388342 /* Assets.xcassets */,
 				B00A0A7B247D16F000388342 /* LaunchScreen.storyboard */,
 				B00A0A7E247D16F000388342 /* Info.plist */,
+				B007F27924A7C47700D6C989 /* RippleAnimation */,
 			);
 			path = PulseAnimation;
 			sourceTree = "<group>";
@@ -264,8 +278,10 @@
 			files = (
 				B00A0A75247D16EF00388342 /* ViewController.swift in Sources */,
 				B00A0A71247D16EF00388342 /* AppDelegate.swift in Sources */,
+				B007F27724A7C3ED00D6C989 /* CircularProgressLayer.swift in Sources */,
 				B0392E4424A7785A00A8776C /* RippleAnimationLayer.swift in Sources */,
 				B00A0A73247D16EF00388342 /* SceneDelegate.swift in Sources */,
+				B007F27524A795F600D6C989 /* PulsingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  RippleAnimationLayer.swift
 //  PulseAnimation
 //
-//  Created by Mojave on 27/06/20.
+//  Created by Vikas Salian on 27/06/20.
 //  Copyright © 2020 Mojave. All rights reserved.
 //
 
@@ -17,6 +17,7 @@ class Pulsing: CALayer{
     var animationDuration: TimeInterval = 0
     var radius: CGFloat = 100
     var numberOfPulses: Float = .infinity
+    var pulsingDelegate: CAAnimationDelegate?
     
     override init(layer: Any){
         super.init(layer: layer)
@@ -43,7 +44,7 @@ class Pulsing: CALayer{
             self.setupAnimationGroup()
             
             DispatchQueue.main.async {
-                self.add(self.animationGroup, forKey: "pulse")
+                self.add(self.animationGroup, forKey: AnimationNameConstant.pulse)
             }
         }
     }
@@ -73,7 +74,8 @@ class Pulsing: CALayer{
         self.animationGroup.timingFunction = defaultCurve
         
         self.animationGroup.animations = [createScaleAnimation(),createOpacityAnimation()]
-        
-        
+        self.animationGroup.setValue(AnimationNameConstant.pulse, forKey: AnimationNameConstant.pulse)
+        self.animationGroup.delegate = pulsingDelegate
     }
 }
+

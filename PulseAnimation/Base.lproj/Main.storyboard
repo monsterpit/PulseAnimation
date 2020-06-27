@@ -10,23 +10,33 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sadad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PulseAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-alpha" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Jp-i1Y">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-oi-nHp" customClass="PulsingView" customModule="PulseAnimation" customModuleProvider="target">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-alpha" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Jp-i1Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="DPp-rv-SKy"/>
-                                    <constraint firstAttribute="width" constant="200" id="z6Z-qD-Ohs"/>
+                                    <constraint firstAttribute="height" constant="200" id="G0a-hg-Mv0"/>
+                                    <constraint firstItem="Nkw-Jp-i1Y" firstAttribute="top" secondItem="dsu-oi-nHp" secondAttribute="top" id="I84-mf-b6x"/>
+                                    <constraint firstAttribute="width" constant="200" id="PyC-7K-bsn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nkw-Jp-i1Y" secondAttribute="bottom" id="VtB-N6-lYs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nkw-Jp-i1Y" secondAttribute="trailing" id="gdq-rj-JLo"/>
+                                    <constraint firstItem="Nkw-Jp-i1Y" firstAttribute="leading" secondItem="dsu-oi-nHp" secondAttribute="leading" id="vjd-wT-B8Y"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Nkw-Jp-i1Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H2d-Lg-0rA"/>
-                            <constraint firstItem="Nkw-Jp-i1Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KkD-o4-EhN"/>
+                            <constraint firstItem="dsu-oi-nHp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="srI-t1-vA1"/>
+                            <constraint firstItem="dsu-oi-nHp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ws9-RV-MrG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
